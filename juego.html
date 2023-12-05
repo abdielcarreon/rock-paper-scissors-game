@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Juego</title>
+</head>
+<body>
+    <header>
+        <h1>Piedra, Papel, Tijera</h1>
+        <p>HTML, CSS, JAVASCRIPT</p>
+    </header>
+
+    <main>
+        <p class="instrucciones" id="instrucciones">
+            El primero en llegar a 5 puntos gana.
+        </p>
+        <div class="marcador">
+            <p class="nombre nombre-jugador">Jugador</p>
+            <p class="nombre nombre-computadora">Computadora</p>
+            <p class="puntos">
+                <span id="puntos-usuario">0</span>
+                <span>-</span>
+                <span id="puntos-computadora">0</span>
+            </p>
+        </div>
+
+        <div class="elige-tu-arma" id="elige-tu-arma">
+            <h2>Elige tu arma para el proximo turno</h2>
+                <div class="armas">
+                    <button class="arma" id="piedra🪨"> 🪨 </button>
+                    <button class="arma" id ="papel📄"> 📄 </button>
+                    <button class="arma" id ="tijera✂️"> ✂️ </button>
+                </div>
+        </div> 
+
+        <div class="mensaje disabled" id="mensaje">
+            <p>Usaste <span class="eleccion" id="eleccion-usuario"> piedra 🪨 </span> <br>
+                Y la computadora usó <span class="eleccion" id="eleccion-computadora"> papel 📄 </span>
+            </p>
+            <p id="gana-punto">¡Ganaste un punto!🔥</p>
+        </div>
+        <button class="btn disabled " id="reiniciar"> Reiniciar juego </button>
+    </main>
+    <script type="text/javascript"> </script>
+    <script src="JavaScript/app.js"> </script>
+</body>
+</html>

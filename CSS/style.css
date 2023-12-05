@@ -1,0 +1,132 @@
+:root {
+    --gold: #DCC48E;
+    --beige: #EAEFD3;
+    --purpule: #27233A;
+
+
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo';
+}
+
+body{
+    background-color: var(--purpule);
+    color: var(--beige);
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--beige);
+    color: var(--purpule);
+    border-radius: 0 0 3rem 3rem;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 2rem;
+}
+
+.marcador {
+    background-color: var(--gold);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--purpule);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.nombre {
+    position: absolute;
+    color: var(--beige);
+    background-color: var(--purpule);
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--gold);
+}
+.nombre-jugador {
+    right: 85%;
+}
+.nombre-computadora {
+    left: 85%;
+}
+
+.puntos {
+    font-size: 1.6rem;
+}
+
+.elegir-tu.arma {
+    margin-bottom: 2rem;
+}
+
+.elige-tu-arma h2{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.armas {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma {
+    font-size: 2rem;
+    background-color: var(--beige);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 2;
+    
+}
+
+.eleccion {
+    color: var(--purpule);
+    background-color: var(--gold);
+    border-radius: .25rem;
+    padding-inline:.25rem;
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--beige);
+    color: var(--purpule);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.disabled {
+    display: none;
+}
